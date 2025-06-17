@@ -121,3 +121,6 @@ for _, row in camera_df.iterrows():
 # === Save final map
 m.save(MAP_PATH)
 print(f"\n🗺️ Map saved to: {MAP_PATH}")
+
+import shutil
+shutil.copyfile("nyc_open_spots_map.html", "index.html")
