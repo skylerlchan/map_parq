@@ -98,6 +98,10 @@ for cam_id in CAMERA_IDS:
 # === Create map
 map_center = [camera_df["latitude"].mean(), camera_df["longitude"].mean()]
 m = folium.Map(location=map_center, zoom_start=13, tiles="CartoDB positron")
+from datetime import datetime
+
+# Cache-busting timestamp (same for all images per run)
+timestamp = datetime.utcnow().strftime("%Y%m%d%H%M%S")
 
 for _, row in camera_df.iterrows():
     cam_id = row["uuid"]
@@ -106,21 +110,25 @@ for _, row in camera_df.iterrows():
         continue
 
     image_filename = os.path.basename(cam_summary["image_path"])
+    
+    # Embed the timestamp in the image URL to force refresh
     popup_html = f"""
     <strong>{row.get('name', 'Unknown Camera')}</strong><br>
     {cam_summary['open']} Open / {cam_summary['total']} Spots<br>
-    <img src='{OUTPUT_FOLDER}/{image_filename}' width="300px">
+    <img src='{OUTPUT_FOLDER}/{image_filename}?t={timestamp}' width="300px">
     """
 
     folium.Marker(
         location=[row["latitude"], row["longitude"]],
         popup=folium.Popup(popup_html, max_width=320),
-        icon=folium.Icon(color="green" if cam_summary["open"] > 0 else "red", icon="camera", prefix="fa")
+        icon=folium.Icon(
+            color="green" if cam_summary["open"] > 0 else "red",
+            icon="camera",
+            prefix="fa"
+        )
     ).add_to(m)
 
-# === Save final map
-m.save(MAP_PATH)
-print(f"\n🗺️ Map saved to: {MAP_PATH}")
-
-import shutil
-shutil.copyfile("nyc_open_spots_map.html", "index.html")
+# Save and overwrite index.html for GitHub Pages
+# Save directly to index.html for GitHub Pages
+m.save("index.html")
+print("\n🗺️ Map saved to: index.html")
