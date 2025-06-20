@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9cf5dfd165e874e08c9a355629e64cec {
+                #map_356fd73b87522867034595541c61ef4f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_9cf5dfd165e874e08c9a355629e64cec" ></div>
+            <div class="folium-map" id="map_356fd73b87522867034595541c61ef4f" ></div>
         
 </body>
 <script>
     
     
-            var map_9cf5dfd165e874e08c9a355629e64cec = L.map(
-                "map_9cf5dfd165e874e08c9a355629e64cec",
+            var map_356fd73b87522867034595541c61ef4f = L.map(
+                "map_356fd73b87522867034595541c61ef4f",
                 {
                     center: [40.718338666666675, -73.96574266666666],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_e8a4c9a7e725bcce2bcef52f8f1dd25a = L.tileLayer(
+            var tile_layer_124812aeb7c5dc9e010d8245db00ac44 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,55 @@
             );
         
     
-            tile_layer_e8a4c9a7e725bcce2bcef52f8f1dd25a.addTo(map_9cf5dfd165e874e08c9a355629e64cec);
+            tile_layer_124812aeb7c5dc9e010d8245db00ac44.addTo(map_356fd73b87522867034595541c61ef4f);
         
     
-            var marker_2f4c87180ded35580627ce9c109d1383 = L.marker(
+            var marker_18e7a1efddce67e689f185b3ab372212 = L.marker(
+                [40.672744, -73.968781],
+                {
+}
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
+        
+    
+            var icon_ba74c5f2628ba4af69ed719030e6a2bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_363157a1138e048ec4c853c2e55de1e1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_37215f29adedb655ec6e9a5fbb12b11c = $(`<div id="html_37215f29adedb655ec6e9a5fbb12b11c" style="width: 100.0%; height: 100.0%;">     <strong>Grand Army Plaza</strong><br>     3 Open / 3 Spots<br>     <img src='annotated_output/1c51b3ec-3d29-4025-928d-4e182e7c0bd5.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_363157a1138e048ec4c853c2e55de1e1.setContent(html_37215f29adedb655ec6e9a5fbb12b11c);
+            
+        
+
+        marker_18e7a1efddce67e689f185b3ab372212.bindPopup(popup_363157a1138e048ec4c853c2e55de1e1)
+        ;
+
+        
+    
+    
+                marker_18e7a1efddce67e689f185b3ab372212.setIcon(icon_ba74c5f2628ba4af69ed719030e6a2bc);
+            
+    
+            var marker_26716aa08d3f53a199483313320daa9f = L.marker(
                 [40.72231, -73.957447],
                 {
 }
-            ).addTo(map_9cf5dfd165e874e08c9a355629e64cec);
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
         
     
-            var icon_bff47f009366e09e6fa314e79e1e8560 = L.AwesomeMarkers.icon(
+            var icon_a5a15d0a62717a002acfd5977d967ad5 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -116,34 +154,34 @@
             );
         
     
-        var popup_8dee18e7758508bf678004b4e85d3a7b = L.popup({
+        var popup_bac7089d1bf696d811cabb4528b12cb6 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_2b28a42e35e619bcbab0c0430a166c31 = $(`<div id="html_2b28a42e35e619bcbab0c0430a166c31" style="width: 100.0%; height: 100.0%;">     <strong>Wythe Ave @ North 12 St</strong><br>     3 Open / 4 Spots<br>     <img src='annotated_output/6a5f91d8-042f-4678-a722-2c3c560dedf2.jpg?t=20250620014206' width="300px">     </div>`)[0];
-                popup_8dee18e7758508bf678004b4e85d3a7b.setContent(html_2b28a42e35e619bcbab0c0430a166c31);
+                var html_54c8007ec143c0217a031c919aea28dc = $(`<div id="html_54c8007ec143c0217a031c919aea28dc" style="width: 100.0%; height: 100.0%;">     <strong>Wythe Ave @ North 12 St</strong><br>     2 Open / 4 Spots<br>     <img src='annotated_output/6a5f91d8-042f-4678-a722-2c3c560dedf2.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_bac7089d1bf696d811cabb4528b12cb6.setContent(html_54c8007ec143c0217a031c919aea28dc);
             
         
 
-        marker_2f4c87180ded35580627ce9c109d1383.bindPopup(popup_8dee18e7758508bf678004b4e85d3a7b)
+        marker_26716aa08d3f53a199483313320daa9f.bindPopup(popup_bac7089d1bf696d811cabb4528b12cb6)
         ;
 
         
     
     
-                marker_2f4c87180ded35580627ce9c109d1383.setIcon(icon_bff47f009366e09e6fa314e79e1e8560);
+                marker_26716aa08d3f53a199483313320daa9f.setIcon(icon_a5a15d0a62717a002acfd5977d967ad5);
             
     
-            var marker_39e74301d500ea38992d6bd15f9f3a3b = L.marker(
+            var marker_09ea6c97824c6d75dcdcb63fd7cbfd0b = L.marker(
                 [40.728739, -74.007137],
                 {
 }
-            ).addTo(map_9cf5dfd165e874e08c9a355629e64cec);
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
         
     
-            var icon_f7689842bea0cbb33aac06da87e4b06b = L.AwesomeMarkers.icon(
+            var icon_189119ed5017343852f11b8c6d79c853 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -154,34 +192,72 @@
             );
         
     
-        var popup_07be055549f575c161910456916a3487 = L.popup({
+        var popup_f5c36d12809885185522e27c5f9fb253 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_bf8dc08e6731828f0fa53e4a90110a9f = $(`<div id="html_bf8dc08e6731828f0fa53e4a90110a9f" style="width: 100.0%; height: 100.0%;">     <strong>West Houston @ Hudson St</strong><br>     1 Open / 2 Spots<br>     <img src='annotated_output/0ff11926-fcf0-4e3b-8aea-ffc0ea4f2228.jpg?t=20250620014206' width="300px">     </div>`)[0];
-                popup_07be055549f575c161910456916a3487.setContent(html_bf8dc08e6731828f0fa53e4a90110a9f);
+                var html_50038f924959fd5f62170e6ecbbdcd91 = $(`<div id="html_50038f924959fd5f62170e6ecbbdcd91" style="width: 100.0%; height: 100.0%;">     <strong>West Houston @ Hudson St</strong><br>     1 Open / 2 Spots<br>     <img src='annotated_output/0ff11926-fcf0-4e3b-8aea-ffc0ea4f2228.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_f5c36d12809885185522e27c5f9fb253.setContent(html_50038f924959fd5f62170e6ecbbdcd91);
             
         
 
-        marker_39e74301d500ea38992d6bd15f9f3a3b.bindPopup(popup_07be055549f575c161910456916a3487)
+        marker_09ea6c97824c6d75dcdcb63fd7cbfd0b.bindPopup(popup_f5c36d12809885185522e27c5f9fb253)
         ;
 
         
     
     
-                marker_39e74301d500ea38992d6bd15f9f3a3b.setIcon(icon_f7689842bea0cbb33aac06da87e4b06b);
+                marker_09ea6c97824c6d75dcdcb63fd7cbfd0b.setIcon(icon_189119ed5017343852f11b8c6d79c853);
             
     
-            var marker_a9d7aed94123af5258e5c71b84cead24 = L.marker(
+            var marker_3a2c255d14638bcf2b494243741f0259 = L.marker(
                 [40.709853, -73.991746],
                 {
 }
-            ).addTo(map_9cf5dfd165e874e08c9a355629e64cec);
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
         
     
-            var icon_f85397e2ea18798ddfc163994724acf4 = L.AwesomeMarkers.icon(
+            var icon_59004c7a719284b3ec348350eec7551a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5aad644f8bf185da9b2bd2e19f959caf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9a36d53b49ed431f5808a7b35022b302 = $(`<div id="html_9a36d53b49ed431f5808a7b35022b302" style="width: 100.0%; height: 100.0%;">     <strong>South Street @ Pike Street</strong><br>     1 Open / 3 Spots<br>     <img src='annotated_output/547cd268-58f9-4a84-a235-dbaa0432d79a.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_5aad644f8bf185da9b2bd2e19f959caf.setContent(html_9a36d53b49ed431f5808a7b35022b302);
+            
+        
+
+        marker_3a2c255d14638bcf2b494243741f0259.bindPopup(popup_5aad644f8bf185da9b2bd2e19f959caf)
+        ;
+
+        
+    
+    
+                marker_3a2c255d14638bcf2b494243741f0259.setIcon(icon_59004c7a719284b3ec348350eec7551a);
+            
+    
+            var marker_32731156e7e0d29cce8110fec6cbd1b0 = L.marker(
+                [40.690593, -73.918328],
+                {
+}
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
+        
+    
+            var icon_0f706e58deddf896ebd8c32c6f402859 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -192,72 +268,34 @@
             );
         
     
-        var popup_638a5decbcf4821d89dec55f6d011dd4 = L.popup({
+        var popup_ce10fcbaef7145d5baffd3cc3b657a33 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_b011e10cda3f96ba35891254a40f11f1 = $(`<div id="html_b011e10cda3f96ba35891254a40f11f1" style="width: 100.0%; height: 100.0%;">     <strong>South Street @ Pike Street</strong><br>     0 Open / 3 Spots<br>     <img src='annotated_output/547cd268-58f9-4a84-a235-dbaa0432d79a.jpg?t=20250620014206' width="300px">     </div>`)[0];
-                popup_638a5decbcf4821d89dec55f6d011dd4.setContent(html_b011e10cda3f96ba35891254a40f11f1);
+                var html_504f8e30629f4d428f11742aa3aa4f93 = $(`<div id="html_504f8e30629f4d428f11742aa3aa4f93" style="width: 100.0%; height: 100.0%;">     <strong>Bushwick Ave @ Gates Ave</strong><br>     0 Open / 1 Spots<br>     <img src='annotated_output/74707723-013b-4bf1-9a8b-c209dbf71984.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_ce10fcbaef7145d5baffd3cc3b657a33.setContent(html_504f8e30629f4d428f11742aa3aa4f93);
             
         
 
-        marker_a9d7aed94123af5258e5c71b84cead24.bindPopup(popup_638a5decbcf4821d89dec55f6d011dd4)
+        marker_32731156e7e0d29cce8110fec6cbd1b0.bindPopup(popup_ce10fcbaef7145d5baffd3cc3b657a33)
         ;
 
         
     
     
-                marker_a9d7aed94123af5258e5c71b84cead24.setIcon(icon_f85397e2ea18798ddfc163994724acf4);
+                marker_32731156e7e0d29cce8110fec6cbd1b0.setIcon(icon_0f706e58deddf896ebd8c32c6f402859);
             
     
-            var marker_dab2d8531bf628f4ceebe21ed5ad0e82 = L.marker(
-                [40.690593, -73.918328],
-                {
-}
-            ).addTo(map_9cf5dfd165e874e08c9a355629e64cec);
-        
-    
-            var icon_90c1edd12627076e5f7e0f075bd934a9 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "camera",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_f1d64b696f619540a6610333702fde83 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_8c1d47ebbfcfb6ad0e962407f0edadd8 = $(`<div id="html_8c1d47ebbfcfb6ad0e962407f0edadd8" style="width: 100.0%; height: 100.0%;">     <strong>Bushwick Ave @ Gates Ave</strong><br>     1 Open / 1 Spots<br>     <img src='annotated_output/74707723-013b-4bf1-9a8b-c209dbf71984.jpg?t=20250620014206' width="300px">     </div>`)[0];
-                popup_f1d64b696f619540a6610333702fde83.setContent(html_8c1d47ebbfcfb6ad0e962407f0edadd8);
-            
-        
-
-        marker_dab2d8531bf628f4ceebe21ed5ad0e82.bindPopup(popup_f1d64b696f619540a6610333702fde83)
-        ;
-
-        
-    
-    
-                marker_dab2d8531bf628f4ceebe21ed5ad0e82.setIcon(icon_90c1edd12627076e5f7e0f075bd934a9);
-            
-    
-            var marker_774c6c91ab0597632931be1ba48afc9c = L.marker(
+            var marker_1a0623171296bd804ce70d80384793c7 = L.marker(
                 [40.785793, -73.951017],
                 {
 }
-            ).addTo(map_9cf5dfd165e874e08c9a355629e64cec);
+            ).addTo(map_356fd73b87522867034595541c61ef4f);
         
     
-            var icon_91b324b4deb7fc2159126f7bfccf99df = L.AwesomeMarkers.icon(
+            var icon_1709aa0f95cbdbeaab294fc3bbee3d1d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -268,24 +306,24 @@
             );
         
     
-        var popup_df7c936cd6d10e0ef1b48e0976d7edfa = L.popup({
+        var popup_247ada7abb70a5967d53ae37df720855 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_baefcaf466b1df67f6c5988dc84563e8 = $(`<div id="html_baefcaf466b1df67f6c5988dc84563e8" style="width: 100.0%; height: 100.0%;">     <strong>Lexington Ave @ 96 St</strong><br>     3 Open / 3 Spots<br>     <img src='annotated_output/f5c6fd9c-8e5b-4c3c-8c3e-31233678f15b.jpg?t=20250620014206' width="300px">     </div>`)[0];
-                popup_df7c936cd6d10e0ef1b48e0976d7edfa.setContent(html_baefcaf466b1df67f6c5988dc84563e8);
+                var html_b68476b61ef9a787ff62db013300dae8 = $(`<div id="html_b68476b61ef9a787ff62db013300dae8" style="width: 100.0%; height: 100.0%;">     <strong>Lexington Ave @ 96 St</strong><br>     2 Open / 3 Spots<br>     <img src='annotated_output/f5c6fd9c-8e5b-4c3c-8c3e-31233678f15b.jpg?t=20250620014417' width="300px">     </div>`)[0];
+                popup_247ada7abb70a5967d53ae37df720855.setContent(html_b68476b61ef9a787ff62db013300dae8);
             
         
 
-        marker_774c6c91ab0597632931be1ba48afc9c.bindPopup(popup_df7c936cd6d10e0ef1b48e0976d7edfa)
+        marker_1a0623171296bd804ce70d80384793c7.bindPopup(popup_247ada7abb70a5967d53ae37df720855)
         ;
 
         
     
     
-                marker_774c6c91ab0597632931be1ba48afc9c.setIcon(icon_91b324b4deb7fc2159126f7bfccf99df);
+                marker_1a0623171296bd804ce70d80384793c7.setIcon(icon_1709aa0f95cbdbeaab294fc3bbee3d1d);
             
 </script>
 </html>
